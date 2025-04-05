@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+  /* font-weight: 100; */
+  font-style: normal;
+}
+
+* > .content{
+    font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 13px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;300;500&display=swap');
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 40px;
+    gap: 15px;
+}
+
+.name{
+  color: rgb(37, 0, 204); 
+}
+.title{
+  color: red;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  width: 100%;
+  border-radius: 2px;
+  text-align: center;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.section{
+    display: flex;
+    padding: 20px 10px;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 50px;
+    .left{
+       /* width: 47%; */
+       width: calc(50% - 25px);
+       display: flex;
+       flex-direction: column;
+       gap: 30px;
+       border-right: 1px solid grey;
+
+
+       .contact{
+         display: flex;
+         flex-direction: column;
+         gap: 15px;
+
+        .heading{
+            color: blue;
+
+        }
+        .content{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 5px;
+
+
+          & > *{
+            text-decoration: none;
+          }
+        }
+       }
+
+       .skills{
+        display: flex;
+         flex-direction: column;
+         gap: 15px;
+
+        .heading{
+            color: blue;
+        }
+        .content{
+            ul{
+                display: flex;
+                flex-direction: column;
+                gap: 3px;
+                font-size: 12px;
+
+
+                li{
+                    list-style-type: none;
+
+                }
+            }
+
+            
+        }
+
+       }
+
+       .education{
+        display: flex;
+         flex-direction: column;
+         gap: 15px;
+
+        .heading{
+            color: blue;
+        }
+        .content{
+            display: flex;
+         flex-direction: column;
+         gap: 15px;
+
+         .child{
+            display: flex;
+         flex-direction: column;
+
+         p{
+            font-size: 14px;
+         }
+         }
+        }
+
+       }
+
+    }
+    .right{
+        width: calc(50% - 25px);
+       display: flex;
+       flex-direction: column;
+       gap: 30px;
+       width: 50%;
+
+       .about{
+        display: flex;
+         flex-direction: column;
+         gap: 15px;
+
+         .heading{
+            color: blue;
+         }
+         .content{
+
+         }
+
+
+       }
+       .work_exp{
+        display: flex;
+         flex-direction: column;
+         gap: 15px;
+
+         .heading{
+            color: blue;
+         }
+         .content{
+            display: flex;
+         flex-direction: column;
+         gap: 15px;
+         }
+
+         .par_exp{
+            display: flex;
+         flex-direction: column;
+         gap: 5px;
+
+         .sub1{
+            display: flex;
+         flex-direction: column;
+
+         }
+         .sub2{
+            ul{
+                /* margin-left: 50px; */
+                padding-left: 50px;
+
+                li{
+                    
+                }
+            }
+         }
+         }
+
+       }
+
+
+
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .section{
+
+        flex-direction: column;
+        gap: 30px;
+
+        .right{
+            width: 80vw;
+
+
+            & > *{
+              width: 80vw;
+            }
+        }
+        .left{
+            width: 80vw;
+            border: none !important;
+
+
+            & > *{
+              width: 80vw;
+            }
+        }
+    }
+}
